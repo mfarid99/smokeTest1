@@ -23,4 +23,5 @@ test("myFirstTest", async () => {
   await page.press(".new-todo", "Enter");
   await page.click(".toggle");
   await page.click(".clear-completed");
+  throw new Error("demogorgon!");
 });
