@@ -47,7 +47,7 @@ jobs:
           path: ${{ github.workspace }}/artifacts
 
           # add the following lines 
-      - name: Post Slack Message
-        if: failure()
-        run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Smoke tests failed!"}' ${{ secrets.SLACK_WEBHOOK_URL }}
+      # - name: Post Slack Message
+      #   if: failure()
+      #   run: |
+      #     curl -X POST -H 'Content-type: application/json' --data '{"text":"Smoke tests failed!"}' ${{ secrets.SLACK_WEBHOOK_URL }}
